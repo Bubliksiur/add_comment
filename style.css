@@ -27,7 +27,6 @@ form {
 
 form textarea {
     background-color: #e0e0e0;
-    border: 1px solid #7d7d7d;
     margin-bottom: 2px;
 }
 
@@ -42,11 +41,6 @@ form button {
 form button:hover {
     background-color: #c1bcbc;
     transform: translateX(10px);
-}
-
-form button:active {
-    background-color: #e0e0e0;
-    padding: 2px 15px;
 }
 
 div {
@@ -73,8 +67,4 @@ div button {
 div button:hover {
     background-color: rgb(255, 0, 0);
     transform: translateY(-5px);
-}
-
-div button:active {
-    background-color: rgb(255, 135, 135);
 }

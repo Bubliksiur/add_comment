@@ -5,6 +5,7 @@ Dev:
 
 const messageTextArea = document.getElementById('message');
 const submitButton = document.getElementById('submit');
+const lettersBlock = document.querySelector('p');
 
 const main = document.querySelector('main');
 
@@ -30,8 +31,17 @@ function validate(e) {
     return true;
 }
 
+const howManyLetters = () => {
+    let textAreaValue = messageTextArea.value;
+    lettersBlock.textContent = `Letters: ${textAreaValue.length}`;
+}
+
+messageTextArea.addEventListener('input', howManyLetters)
+
 submitButton.addEventListener('click', (e) => {
     if (!validate(e)) return;
+
+    lettersBlock.textContent = '';
 
     const opinion = document.createElement('div');
     main.appendChild(opinion);

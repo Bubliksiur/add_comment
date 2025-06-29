@@ -1,4 +1,7 @@
-// Bubliksiur
+/*
+Dev:
+    --> Bubliksiur
+ */
 
 const messageTextArea = document.getElementById('message');
 const submitButton = document.getElementById('submit');
